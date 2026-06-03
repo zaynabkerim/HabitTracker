@@ -1,0 +1,96 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #0f0f10;
+  color: #ffffff;
+  padding: 40px;
+}
+
+/* Заголовки */
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+/* Инпуты и селект */
+input,
+select {
+  width: 250px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #333;
+  background: #1a1a1c;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #c9a96e;
+}
+
+/* Кнопка */
+button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #c9a96e, #e6c88d);
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Список объектов */
+#list {
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Карточка */
+#list li {
+  background: #1a1a1c;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s;
+  border: 1px solid #222;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Эффект hover */
+#list li:hover {
+  transform: translateY(-5px);
+  border-color: #c9a96e;
+}
+
+/* Текст внутри карточек */
+#list li strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+#list li span {
+  color: #c9a96e;
+  font-weight: 500;
+}
